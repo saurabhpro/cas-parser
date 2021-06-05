@@ -6,7 +6,7 @@ API Demo for [casparser](https://github.com/codereverser/casparser)
 
 ## Dependencies
 - backend
-  - python >= 3.8
+  - python >= 3.9
 - frontend
   - node >= 12
 
@@ -28,6 +28,7 @@ pip3 install -U setuptools wheel pip
 pip3 install -r requirements.txt
 ```
 2. Deploy API
+this has to be done in venv (the script takes care of it ;)
 ```
 uvicorn app:app --reload
 ```
@@ -35,9 +36,9 @@ uvicorn app:app --reload
 ### Frontend
 1. Install dependencies from ./web
 ```
-npm install
+pnpm install
 ```
 2. Run frontend
 ```
-npm run dev
+pnpm run dev
 ```
