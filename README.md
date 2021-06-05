@@ -33,6 +33,17 @@ this has to be done in venv (the script takes care of it ;)
 uvicorn app:app --reload
 ```
 
+3. API curl calls
+```js
+curl --location --request GET 'http://127.0.0.1:8000/health'
+
+
+curl --location --request POST 'http://127.0.0.1:8000/api/process' \
+--form 'password="password"' \
+--form 'cas=@"/Users/file/path/cams.pdf"'
+```
+
+
 ### Frontend
 1. Install dependencies from ./web
 ```

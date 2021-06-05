@@ -25,10 +25,10 @@ app = FastAPI()
 
 
 @app.get(
-    "/ping", response_class=PlainTextResponse, summary="API health check / keep-warm"
+    "/health", response_class=PlainTextResponse, summary="API health check / keep-warm"
 )
 def ping():
-    return PlainTextResponse("pong")
+    return PlainTextResponse("ok")
 
 
 @app.post(
