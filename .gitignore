@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# test sensitive
+tests/temp_env_var.py
+tests/my_first_gpg.cert
+tests/files/
+tests/files.tar

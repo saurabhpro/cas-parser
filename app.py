@@ -1,7 +1,7 @@
 import asyncio
 from typing import Dict
 
-from fastapi import FastAPI, File, Form, Request, UploadFile
+from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.responses import JSONResponse, PlainTextResponse
 from mangum import Mangum
 from pydantic import BaseModel
@@ -25,10 +25,10 @@ app = FastAPI()
 
 
 @app.get(
-    "/ping", response_class=PlainTextResponse, summary="API health check / keep-warm"
+    "/health", response_class=PlainTextResponse, summary="API health check / keep-warm"
 )
 def ping():
-    return PlainTextResponse("pong")
+    return PlainTextResponse("ok")
 
 
 @app.post(
@@ -46,6 +46,7 @@ async def process_cas(password: str = Form(...), cas: UploadFile = File(...)):
         result.update(status="OK", message="", cas=cas)
     except Exception as e:
         result.update(message=str(e))
+
     if result["status"] == "error":
         return JSONResponse(result, status_code=400)
     return result
