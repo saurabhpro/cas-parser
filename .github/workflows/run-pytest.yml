@@ -19,6 +19,19 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
+          
+      - name: Import GPG
+        uses: crazy-max/ghaction-import-gpg@v3.1.0
+        with:
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+      - name: GPG user IDs
+        run: |
+          echo "fingerprint: ${{ steps.import_gpg.outputs.fingerprint }}"
+          echo "keyid:       ${{ steps.import_gpg.outputs.keyid }}"
+          echo "name:        ${{ steps.import_gpg.outputs.name }}"
+          echo "email:       ${{ steps.import_gpg.outputs.email }}"
+
       - name: Extract test files
         run: ./.github/scripts/extract_files.sh
         env:
@@ -31,17 +44,7 @@ jobs:
       - name: Install dependencies
         run: poetry install -E mupdf
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
-      - name: Import GPG
-        uses: crazy-max/ghaction-import-gpg@v3.1.0
-        with:
-          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-      - name: GPG user IDs
-        run: |
-          echo "fingerprint: ${{ steps.import_gpg.outputs.fingerprint }}"
-          echo "keyid:       ${{ steps.import_gpg.outputs.keyid }}"
-          echo "name:        ${{ steps.import_gpg.outputs.name }}"
-          echo "email:       ${{ steps.import_gpg.outputs.email }}"
+
       - name: Test with pytest
         run: |
           pytest
