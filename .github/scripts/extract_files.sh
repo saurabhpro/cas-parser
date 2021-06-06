@@ -5,6 +5,6 @@
 gpg --quiet --batch --yes --decrypt --passphrase="$FILES_PASSPHRASE" \
     -vo tests/files.tar tests/files.enc
 
-ls -R
+# ls -R
 
 tar -xvf tests/files.tar -C tests/
