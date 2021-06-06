@@ -1,6 +1,8 @@
 #!/bin/sh
 
-gpg --pinentry-mode=loopback -dv --passphrase "$FILES_PASSPHRASE" \
+# --batch to prevent interactive command
+# --yes to assume "yes" for questions
+gpg --quiet --batch --yes --decrypt --passphrase="$FILES_PASSPHRASE" \
     -vo tests/files.tar tests/files.enc
 
 ls -R
