@@ -20,7 +20,7 @@ specifiers:
   pug: 3.0.2
   sass: 1.34.1
   typescript: 4.3.2
-  vite: 2.3.6
+  vite: 2.3.7
   vite-plugin-eslint: 1.1.1
   vue: 3.0.11
   vue-json-pretty: 2.0.2
@@ -50,8 +50,8 @@ devDependencies:
   pug: 3.0.2
   sass: 1.34.1
   typescript: 4.3.2
-  vite: 2.3.6
-  vite-plugin-eslint: 1.1.1_vite@2.3.6
+  vite: 2.3.7
+  vite-plugin-eslint: 1.1.1_vite@2.3.7
   vue-tsc: 0.1.7_vue@3.0.11
 
 packages:
@@ -3243,7 +3243,7 @@ packages:
       vfile-message: 2.0.4
     dev: true
 
-  /vite-plugin-eslint/1.1.1_vite@2.3.6:
+  /vite-plugin-eslint/1.1.1_vite@2.3.7:
     resolution: {integrity: sha512-ZxOm6Zgv2kzGNGgnwgDzOt+r5nMaUnNft4HjYywJFUaSF19SmqrRdsiO9tGvZtOJ3oy9rQBpxLcSX+34X7eUVQ==}
     peerDependencies:
       vite: ^2.0.0
@@ -3251,13 +3251,13 @@ packages:
       '@rollup/pluginutils': 4.1.0_rollup@2.50.6
       eslint: 7.28.0
       rollup: 2.50.6
-      vite: 2.3.6
+      vite: 2.3.7
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/2.3.6:
-    resolution: {integrity: sha512-fsEpNKDHgh3Sn66JH06ZnUBnIgUVUtw6ucDhlOj1CEqxIkymU25yv1/kWDPlIjyYHnalr0cN6V+zzUJ+fmWHYw==}
+  /vite/2.3.7:
+    resolution: {integrity: sha512-Y0xRz11MPYu/EAvzN94+FsOZHbSvO6FUvHv127CyG7mV6oDoay2bw+g5y9wW3Blf8OY3chaz3nc/DcRe1IQ3Nw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
