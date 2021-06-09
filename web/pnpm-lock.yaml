@@ -7,7 +7,7 @@ specifiers:
   '@vue/compiler-sfc': 3.0.11
   '@vue/eslint-config-typescript': 7.0.0
   '@vuelidate/core': 2.0.0-alpha.19
-  '@vuelidate/validators': 2.0.0-alpha.16
+  '@vuelidate/validators': 2.0.0-alpha.17
   eslint: 7.28.0
   eslint-config-prettier: 8.3.0
   eslint-plugin-prettier-vue: 3.1.0
@@ -28,7 +28,7 @@ specifiers:
 
 dependencies:
   '@vuelidate/core': 2.0.0-alpha.19_vue@3.0.11
-  '@vuelidate/validators': 2.0.0-alpha.16_vue@3.0.11
+  '@vuelidate/validators': 2.0.0-alpha.17_vue@3.0.11
   moment: 2.29.1
   primeflex: 2.0.0
   primeicons: 4.1.0
@@ -544,8 +544,8 @@ packages:
       - vue
     dev: false
 
-  /@vuelidate/validators/2.0.0-alpha.16_vue@3.0.11:
-    resolution: {integrity: sha512-RqH+a7lMDLNlOuZnHbAa3iTUOjzemY4yGa3ORe5TJxOieWhlmspfW/Y3PKKYMP3eukSsfjzF53pJNBF7fop5FA==}
+  /@vuelidate/validators/2.0.0-alpha.17_vue@3.0.11:
+    resolution: {integrity: sha512-Sl+T/ejjjS4Z+dOU6pBEGyPjuITg/jQB+sU/oAzZt0ugW7Ar/fckHrbcR4YVPbANQ0/YgftaZ7+WkxUv5YrhPA==}
     dependencies:
       vue-demi: 0.9.1_vue@3.0.11
     transitivePeerDependencies:
