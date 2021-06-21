@@ -21,7 +21,7 @@ specifiers:
   sass: 1.35.1
   typescript: 4.3.4
   vite: 2.3.7
-  vite-plugin-eslint: 1.1.2
+  vite-plugin-eslint: 1.1.3
   vue: 3.0.11
   vue-json-pretty: 2.0.2
   vue-tsc: 0.1.7
@@ -51,7 +51,7 @@ devDependencies:
   sass: 1.35.1
   typescript: 4.3.4
   vite: 2.3.7
-  vite-plugin-eslint: 1.1.2_vite@2.3.7
+  vite-plugin-eslint: 1.1.3_vite@2.3.7
   vue-tsc: 0.1.7_vue@3.0.11
 
 packages:
@@ -3291,8 +3291,8 @@ packages:
       vfile-message: 2.0.4
     dev: true
 
-  /vite-plugin-eslint/1.1.2_vite@2.3.7:
-    resolution: {integrity: sha512-Va6MX6dgB4b+uxsXf7staiUdo8U/av6ymbBnkCP4etwUTSf0ph65psiZR3gg80Dy2rmsC0mPCFXmuniif00m3Q==}
+  /vite-plugin-eslint/1.1.3_vite@2.3.7:
+    resolution: {integrity: sha512-AFdt2L/4t+tk4DXtz1CLM5zqms2wDSLcSZyCdiXTIyC8bkVC5DnxTUKhL68BZzwCpIPpUmFb6UFLxZJBwxg2LQ==}
     peerDependencies:
       vite: ^2.0.0
     dependencies:
