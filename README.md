@@ -66,9 +66,9 @@ pnpm run dev
 - https://www.howtogeek.com/427982/how-to-encrypt-and-decrypt-files-with-gpg-on-linux/
 - https://medium.com/@shay.palachy/temp-environment-variables-for-pytest-7253230bd777
 
-saurabh.kumar@C02D70TBMD6N cas-parser % tar -czvf files.tar files/    
-saurabh.kumar@C02D70TBMD6N cas-parser % gpg -r saurabhk1511@gmail.com  -o files.enc -e files.tar
+cas-parser % tar -czvf files.tar files/    
+cas-parser % gpg -r saurabhk1511@gmail.com  -o files.enc -e files.tar
 
-saurabh.kumar@C02D70TBMD6N cas-parser % gpg -q --batch --yes -d --passphrase="battlestar75" \
+cas-parser % gpg -q --batch --yes -d --passphrase="battlestar75" \
     -vo tests/files.tar tests/files.enc
-saurabh.kumar@C02D70TBMD6N cas-parser % tar -xvf tests/files.tar -C tests/
+cas-parser % tar -xvf tests/files.tar -C tests/
