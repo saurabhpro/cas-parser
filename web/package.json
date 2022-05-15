@@ -8,7 +8,7 @@
     "lint:js": "eslint --ext .ts,.js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@vuelidate/core": "2.0.0-alpha.19",
+    "@vuelidate/core": "2.0.0-alpha.41",
     "@vuelidate/validators": "2.0.0-alpha.17",
     "moment": "2.29.1",
     "primeflex": "2.0.0",
