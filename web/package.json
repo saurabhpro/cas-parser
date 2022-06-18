@@ -11,7 +11,7 @@
     "@vuelidate/core": "2.0.0-alpha.19",
     "@vuelidate/validators": "2.0.0-alpha.17",
     "moment": "2.29.1",
-    "primeflex": "2.0.0",
+    "primeflex": "3.2.1",
     "primeicons": "4.1.0",
     "primevue": "3.5.1",
     "vue": "3.1.2",
